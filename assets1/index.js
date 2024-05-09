@@ -14,11 +14,11 @@ const f = ' Україні';
 const ef = e+f;
 console.log(ef);
 
-const eleven = 11;
+/*const eleven = 11;
 const isTrue = true;
 const js = 'java script';
 const string = '100';
-console.log(eleven,isTrue,js,string);
+console.log(eleven,isTrue,js,string);*/
 
 /*num+=11;
 num*=11;
