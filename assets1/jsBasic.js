@@ -26,6 +26,9 @@ num-=11;
  num/=11;
  num++;
  num--;*/
+ let num = 1;
+ num++;
+
 
 /*let variable0 = Number(prompt('Please input a number'));
 alert(variable1**2)*/
