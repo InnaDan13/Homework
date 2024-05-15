@@ -38,7 +38,7 @@ if (!isOnline) {
 //   document.write("No discount");
 // }
 
-//4.
+//4. В окремому файлі
 
 //switch...case
 
