@@ -20,6 +20,7 @@ if (isDay) {
 document.write(
   `<button style = color:${color};background-color:${background}> ${day} theme</button>`
 );
+
 //2.
 const isOnline = true;
 
