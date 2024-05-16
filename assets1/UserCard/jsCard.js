@@ -13,9 +13,11 @@ const loginColor = isLogin ? "green" : "black";
 const mode = isLogin ? "Online" : "Offline";
 const isFemale = true;
 const genderColor = isFemale ? "deeppink" : "blue";
+const isMaleCOlor = isFemale? "female" : "male"
+
 
 document.write(
-  `<div><article>
+  `<div><article class=" ${isMaleCOlor}">
     <img src= "${link}" style = border-color:${genderColor} />
     <p style = color:${loginColor};> ${mode}</p>    
     <h2>${firstNAme} ${secondNAme}</h2>
@@ -24,4 +26,5 @@ document.write(
     </article></div>
     `
 );
+
 

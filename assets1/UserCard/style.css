@@ -21,7 +21,10 @@ article {
 
 }
 
-article:hover {box-shadow:13px 8px 24px 17px deeppink;}
+.male:hover {box-shadow:13px 8px 24px 17px blue;}
+.female:hover {box-shadow:13px 8px 24px 17px deeppink;}
+
+
   
 p,
 h2,
