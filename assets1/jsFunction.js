@@ -41,7 +41,7 @@ console.log(squareTriangle(5, 3));
 
 const squares = function squareRactangle(a, b) {
   return a * b;
-}
+};
 console.log(squares(2, 6));
 
 function shapeSquare(a) {
@@ -53,7 +53,6 @@ console.log(shapeSquare(5));
 
 // Define a function named test_prime that checks whether a given number n is a prime number
 function test_prime(n) {
-
   // Check if the number is equal to 1, which is not a prime number
   if (n === 1) {
     return false;
@@ -70,21 +69,19 @@ function test_prime(n) {
       }
     }
     // If no factors are found, the number is a prime number
-    return true;  
+    return true;
   }
 }
 
 console.log(test_prime(37));
 
-
 //6.
 
-const picture =
-  "https://static4.arkanasmaku.pl/hpeciai/4c5bb1e3ed76e7ccb957b18228dc9a50/pol_pm_Cytryna-BIO-1-kg-48909_1.webp";
+const picture = "https://static4.arkanasmaku.pl/hpeciai/4c5bb1e3ed76e7ccb957b18228dc9a50/pol_pm_Cytryna-BIO-1-kg-48909_1.webp" ;
 const name = "Lemon";
 const description = "A fruit of yellow color and bitter taste";
 const price = 20;
-const priceDiscount = '3%';
+const priceDiscount = "3%";
 
 function createProductCard(
   productImg,
@@ -94,8 +91,12 @@ function createProductCard(
   productDiscount
 ) {
   if (productDiscount === undefined) {
-    productDiscount = '';
-  } 
+    productDiscount = "";
+  }
+  if (productImg === '' || productImg === null) {
+    productImg =
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxjGracMN5hRfKHJ2JHf-9gI2MhAGfM6UbRShFGUMeK95FB2VSmP73zl-VWix1C5crEHM&usqp=CAU";
+  }
 
   return `<article>
     <img src="${productImg}"/> 
@@ -105,7 +106,6 @@ function createProductCard(
     <p>${productDiscount} </p>
 
   </article>`;
- 
 }
 
 document.write(
