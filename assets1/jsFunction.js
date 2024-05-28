@@ -35,6 +35,9 @@ console.log(isTriangle(2, 3, 0));
  * @returns {number} -  SQuare
  */
 function squareTriangle(a, h) {
+  if (a <= 0 || h <= 0) {
+    return "Sides must be more than 0";
+  }
   return (a * h) / 2;
 }
 console.log(squareTriangle(5, 3));
@@ -77,7 +80,8 @@ console.log(test_prime(37));
 
 //6.
 
-const picture = "https://static4.arkanasmaku.pl/hpeciai/4c5bb1e3ed76e7ccb957b18228dc9a50/pol_pm_Cytryna-BIO-1-kg-48909_1.webp" ;
+const picture =
+  "https://static4.arkanasmaku.pl/hpeciai/4c5bb1e3ed76e7ccb957b18228dc9a50/pol_pm_Cytryna-BIO-1-kg-48909_1.webp";
 const name = "Lemon";
 const description = "A fruit of yellow color and bitter taste";
 const price = 20;
@@ -93,7 +97,7 @@ function createProductCard(
   if (productDiscount === undefined) {
     productDiscount = "";
   }
-  if (productImg === '' || productImg === null) {
+  if (productImg === "" || productImg === null) {
     productImg =
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxjGracMN5hRfKHJ2JHf-9gI2MhAGfM6UbRShFGUMeK95FB2VSmP73zl-VWix1C5crEHM&usqp=CAU";
   }
