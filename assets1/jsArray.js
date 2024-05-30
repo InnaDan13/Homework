@@ -21,11 +21,6 @@ for (let i = 1; i < mas.length; i++) {
 //5.
 let mult = 1;
 
-// for (let i = 0; i < mas.length; i++) {
-//   mult *= mas[i];
-// }
-// console.log(mult);
-
 for (let el in mas) {
   mult *= mas[el];
 }
@@ -35,7 +30,7 @@ console.log(mult);
 const phones = [
   {
     id: 1,
-    picture_link: "https://prod-api.mediaexpert.pl/api/images/gallery_500_500/thumbnails/images/41/4117878/Smartfon-APPLE-Fioletowy-1.jpg",
+    picture_link: "https://prod-api.mediaexpert.pl/api/images/gallery_500_500/thumbnails/images/58/5860452/Smartfon-APPLE-iPhone-15-Pro-Tytan-bialy-1.jpg",
     brand: "Apple",
     model: "iPhone 14",
     color: "Black",
@@ -44,7 +39,7 @@ const phones = [
   },
   {
     id: 2,
-    picture_link: "https://prod-api.mediaexpert.pl/api/images/gallery_500_500/thumbnails/images/41/4117878/Smartfon-APPLE-Fioletowy-1.jpg",
+    picture_link: "https://prod-api.mediaexpert.pl/api/images/gallery_500_500/thumbnails/images/58/5860452/Smartfon-APPLE-iPhone-15-Pro-Tytan-bialy-1.jpg",
     brand: "Samsung",
     model: "Galaxy S23",
     color: "Silver",
@@ -68,13 +63,15 @@ for (let i = 0; i < phones.length; i++) {
     sum += phones[i].price;
 
   document.write(
-    ` <article>
+    ` <section>
+    <article>
     <img src="${phones[i].picture_link}" alt ='phone picture'/>
     <h2>${phones[i].brand} ${phones[i].model}</h2>
     <p>${phones[i].color}</p>
-    <p>${phones[i].price}</p>
+    <p>${phones[i].price} UAH</p>
     <p>${phones[i].ram}</p>
-  </article>`
+  </article>
+  </section>`
   );
 }
 document.write(`<span>${sum / phones.length}</span>`)
@@ -88,7 +85,8 @@ const arrDevidedHundred = arr1.map(el=> el/100)
 //10.
 arr.forEach(el=> console.log(el**3))
 //11.
-
+const deleteElem = phones.findIndex((el,index)=> (index**2 ===100))
+phones.splice(deleteElem, 1);
 //12.
 const isEven = arr.every((el) => el%2===0);
 //13.
