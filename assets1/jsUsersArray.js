@@ -50,6 +50,3 @@ const sortByAge = users.sort((a,b)=>a.age - b.age)
 //*Перевірити, чи всі користувачі підписані (subscribed).
 const allSubscribed = users.every(el => el.isSubscribed===true)
 
-//*Перевірити, чи є серед користувачів користувач з email`ом useremail7@gmail.com.
-//*Визначити, який відсоток користувачів підписані (subscribed).
-
